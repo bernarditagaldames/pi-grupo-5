@@ -91,7 +91,7 @@ header, footer, aside, main {
     display: block;
     padding: 5px;
     text-decoration: none;
-    color: black;
+    color: rgb(73, 5, 47);
 }
 
 /* Main */
