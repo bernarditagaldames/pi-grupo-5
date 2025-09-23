@@ -109,13 +109,14 @@ main {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 5px;
-    width: 200px;
+    width: 220px;
     text-align: center;
+    height:450px;
 }
 
 .producto img {
-    max-width: 100%;
-    height: auto;
+    width: 200px;   /* ancho fijo */
+    height: 300px;  /* alto fijo */
 }
 
 .btn {
