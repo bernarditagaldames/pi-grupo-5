@@ -12,14 +12,6 @@ header, footer, aside, main {
     padding: 10px;
 }
 
-/* Header */
-.top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #eabacf;
-    padding: 10px;
-}
 
 .top-nav .logo {
     font-weight: bold;
