@@ -160,6 +160,15 @@ footer {
     padding: 8px;
 }
 
+.menu {
+    background-color: #f1d2e0;
+    width: 200px;
+    padding: 10px;
+    height: 70;
+    margin-left: 10px;
+    
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     main {
