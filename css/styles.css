@@ -173,6 +173,17 @@ footer {
     
 }
 
+.bodyform main {
+    margin-left: 0;
+    display: flex;
+    place-items: center;
+    min-height: 80vh;
+}
+
+.bodyform .center-form {
+    width: 340px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     main {
