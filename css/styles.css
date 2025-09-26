@@ -183,3 +183,10 @@ footer {
         align-items: center;
     }
 }
+ .opinion{
+    margin-top: 20px;
+ }
+
+ .footer{
+    min-height:80%
+ }
