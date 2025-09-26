@@ -49,9 +49,9 @@ header, footer, aside, main {
     width: auto;
 }
 
+
 /* Menú principal centrado */
 .main-nav {
-    flex-grow: 1;
     text-align: center;
 }
 
@@ -138,21 +138,21 @@ footer {
 
 /* Formularios centrados */
 .center-form {
-    border: 0.8cap solid #ccc;
+    border: 2px solid #ccc;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 17.5%;
-    width: 20%;
-    height: auto;
+    width: 300px;
+    padding: 20px;
+    margin: 50px auto; 
+    background: #f9f9f9;
+    border-radius: 8px;
+
 }
 
 .center-form form {
     display: flex;
     flex-direction: column;
-    
 }
 
 .center-form input, .center-form button {
