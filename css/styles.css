@@ -90,6 +90,8 @@ header, footer, aside, main {
 main {
     margin-left: 210px;
     padding: 10px;
+    min-height: 80vh;
+    
 }
 
 .productos {
@@ -133,12 +135,15 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #f5f5f5;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
 }
 
 /* Formularios centrados */
 .center-form {
-    border: 2px solid #ccc;
+ border: 2px solid #ccc;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -147,7 +152,6 @@ footer {
     margin: 50px auto; 
     background: #f9f9f9;
     border-radius: 8px;
-
 }
 
 .center-form form {
@@ -185,8 +189,4 @@ footer {
 }
  .opinion{
     margin-top: 20px;
- }
-
- .footer{
-    min-height:80%
  }
