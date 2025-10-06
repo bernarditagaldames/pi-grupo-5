@@ -77,6 +77,9 @@ header, footer, aside, main {
 .menu ul {
     list-style: none;
 }
+nav {
+    list-style: none;
+}
 
 .menu ul li a {
     display: block;
