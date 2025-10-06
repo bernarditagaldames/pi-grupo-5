@@ -72,7 +72,6 @@ header, footer, aside, main {
 /* Menú lateral */
 .menu {
     width: 200px;
-    float: left;
 }
 
 .menu ul {
@@ -131,7 +130,6 @@ main {
 
 /* Footer */
 footer {
-    clear: both;
     text-align: center;
     padding: 10px;
     background-color: #f5f5f5;
@@ -191,7 +189,6 @@ footer {
     }
     .menu {
         width: 100%;
-        float: none;
     }
     .productos {
         flex-direction: column;
