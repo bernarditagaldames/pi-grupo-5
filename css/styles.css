@@ -96,7 +96,7 @@ main {
     
 }
 
-.productos {
+.todosproductos {
     display: flex;
     flex-wrap: wrap;
 }
