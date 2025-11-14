@@ -2,21 +2,18 @@ let form = document.querySelector(".formulario");
 let email = document.querySelector(".email");
 let password = document.querySelector(".password");
 
-let userObj = {
-    email : email,
-    password : password,
-}
-
 email.addEventListener("input" , function() {
-    
+
 })
 
 password.addEventListener("input" , function() {
-
+    if (password.value.length < 6) {
+    password.style.color = "red";
+    } else {
+        password.style.color = "green";
+    }
 })
 
-let userString = JSON.stringify(userObj)
-sessionStorage.setItem("userData" , userString);
 
 form.addEventListener("submit" , function(e) {
     e.preventDefault();
@@ -30,8 +27,21 @@ form.addEventListener("submit" , function(e) {
     } if (password.value.length < 6) {
         alert("La contraseña debe detener como minimo 6 caracteres")
         return;
-    } else {
-        this.submit()
-    }
+    } 
 
+     let emailV = this.email.value;
+
+     let emailValue = emailV
+    
+     let userObj = {
+        email: emailValue
+    };
+
+    let userString = JSON.stringify(userObj);
+
+    localStorage.setItem("userData", userString);
+    localStorage.setItem("emailUsuario", emailValue);
+
+    this.submit();
+    
 })
