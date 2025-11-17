@@ -25,12 +25,12 @@
      <main>
         <section class="center-form">
         <h2>Registrarse</h2>
-        <form action="./login.html">
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Contraseña" required>
-            <input type="password" placeholder="Repetir Contraseña" required>
+        <form action="./login.html" class="formRegister" method="get">
+            <input type="email" placeholder="Email" name="emailRegister" class="emailRegister">
+            <input type="password" placeholder="Contraseña" name="passRegister" class="passRegister">
+            <input type="password" placeholder="Repetir Contraseña" name="passRepetir" class="passRepetir">
             <label>
-                <input type="checkbox" required> Acepto términos y condiciones
+                <input type="checkbox" class="terminosYcond" required> Acepto términos y condiciones
             </label>
             <button type="submit">Registrarme</button>
             <p>Ya tengo cuenta <a href="./login.html">Login</a></p>
