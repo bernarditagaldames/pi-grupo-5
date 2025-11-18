@@ -184,6 +184,13 @@ footer {
     width: 340px;
 }
 
+.bienvenida {
+    display: none;
+}
+
+.logoutLink {
+    display: none;
+}
 /* Responsive */
 @media (max-width: 768px) {
     main {
