@@ -56,32 +56,20 @@ fetch('https://dummyjson.com/products/categories')
 let contenedorTodos = document.querySelector(".todosproductos");
 let contenedorMasVendidos = document.querySelector(".productos");
 
-fetch("https://dummyjson.com/products")
+fetch("https://dummyjson.com/products/category/smartphones")
     .then(function(response){
         return response.json();
     })
     .then(function(data){
         let productos = data.products;
 
-        let todos = [];        
-        let masVendidos = [];  
+        let todos = [];       
 
         for (let i = 0; i < productos.length; i++) {
 
-            if (
-                (productos[i].category === "beauty" ||
-                 productos[i].category === "skin-care") 
-                && todos.length < 10
-            ) {
-                todos.push(productos[i]);
-            }
-            if (
-                (productos[i].category === "fragrances" ||
-                 productos[i].category === "skin-care") 
-                && masVendidos.length < 10
-            ) {
-                masVendidos.push(productos[i]);
-            }
+            if (todos.length < 10) {
+              todos.push(productos[i])
+              }
         }
         
         for (let i = 0; i < todos.length; i++) {
@@ -95,7 +83,28 @@ fetch("https://dummyjson.com/products")
                 </article>
             `;
         }
+    })
+    .catch(function(error){
+        console.log("Error", error);
+    });
 
+
+fetch("https://dummyjson.com/products/category/mobile-accessories")
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        let productos = data.products;
+
+        let masVendidos = [];       
+
+        for (let i = 0; i < productos.length; i++) {
+
+            if (masVendidos.length < 10) {
+              masVendidos.push(productos[i])
+              }
+        }
+        
         for (let i = 0; i < masVendidos.length; i++) {
             contenedorMasVendidos.innerHTML += `
                 <article class="producto">
