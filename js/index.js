@@ -33,7 +33,7 @@ fetch('https://dummyjson.com/products/categories')
     let menuLat = [];
 
     for (let i = 0; i < cat.length; i++) {
-      if (cat[i].slug === "beauty" || cat[i].slug === "skin-care") {
+      if (cat[i].slug === "smartphones" || cat[i].slug === "mobile-accesories") {
         menuLat.push(cat[i]);
       }
     }
