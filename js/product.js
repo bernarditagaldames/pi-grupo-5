@@ -1,7 +1,6 @@
 //header//
 let formulario = document.querySelector('.formHeader');
 let buscador = document.querySelector('.buscarHeader');
-let boton = document.querySelector('.botonHeader');
 
 buscador.addEventListener('input', function () {
 

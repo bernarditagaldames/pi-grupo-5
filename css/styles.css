@@ -45,8 +45,7 @@ header, footer, aside, main {
 }
 
 .top-nav .logo img {
-    max-height: 60px; /* Logo chiquito */
-    width: auto;
+    height: 60px;
 }
 
 
@@ -109,15 +108,23 @@ main {
 .producto {
     border: 1px solid #ccc;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     width: 220px;
     text-align: center;
-    height:450px;
+    background-color: beige;
+}
+
+.producto h3 {
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 14px;
 }
 
 .producto img {
-    width: 200px;   /* ancho fijo */
-    height: 300px;  /* alto fijo */
+    width: 200px;
+    height: auto;
 }
 
 .btn {
@@ -129,9 +136,13 @@ main {
     margin-top: 5px;
 }
 
-.detalle-producto img {
-    max-width: 300px;  /* achica la foto */
-    height: auto;
+.detalleProducto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detalleProducto img {
+    width: 300px;  /* achica la foto */
     display: block;
     margin: 10px auto; /* la centra */
 }
@@ -149,15 +160,14 @@ footer {
 
 /* Formularios centrados */
 .center-form {
- border: 2px solid #ccc;
+    border: 2px solid #ccc;
     text-align: center;
     display: flex;
     flex-direction: column;
     width: 300px;
     padding: 20px;
     margin: 50px auto; 
-    background: #f9f9f9;
-    border-radius: 8px;
+    background-color: #f9f9f9;  
 }
 
 .center-form form {
