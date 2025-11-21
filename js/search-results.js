@@ -22,7 +22,7 @@ formulario.addEventListener ('submit', function(e) {
 
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
-let busqueda = qsObj.get("query");
+let busqueda = qsObj.get("buscador");
 
 let titulo = document.querySelector("#searchTitle");
 titulo.innerText = "Resultados de búsqueda para: " + busqueda;

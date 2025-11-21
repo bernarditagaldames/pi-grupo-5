@@ -111,7 +111,7 @@ main {
     margin: 10px;
     width: 220px;
     text-align: center;
-    background-color: beige;
+    background-color: rgb(247, 228, 243);
 }
 
 .producto h3 {
@@ -130,7 +130,7 @@ main {
 .btn {
     display: inline-block;
     padding: 5px 10px;
-    background-color: #8bc34a;
+    background-color: #e57db8;
     color: white;
     text-decoration: none;
     margin-top: 5px;

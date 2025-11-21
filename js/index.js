@@ -20,37 +20,6 @@ formulario.addEventListener ('submit', function(e) {
     this.submit();
 });
 
-// punto 3//
-let aside = document.querySelector('.menuCat');
-
-fetch('https://dummyjson.com/products/categories')
-    .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
-    let cat = data;
-    let menuLat = [];
-
-    for (let i = 0; i < cat.length; i++) {
-      if (cat[i].slug === "smartphones" || cat[i].slug === "mobile-accessories") {
-        menuLat.push(cat[i]);
-      }
-    }
-
-    for (let i = 0; i < menuLat.length; i++) {
-      aside.innerHTML += `
-        <li>
-          <a href="./category.html?slug=${menuLat[i].slug}">
-            ${menuLat[i].name}
-          </a>
-        </li>
-      `;
-    }
-  })
-  .catch(function(error) {
-    console.log("Error:", error);
-  });
-
 //punto 4//
 let contenedorTodos = document.querySelector(".todosproductos");
 let contenedorMasVendidos = document.querySelector(".productos");
@@ -119,3 +88,5 @@ fetch("https://dummyjson.com/products/category/mobile-accessories")
     .catch(function(error){
         console.log("Error", error);
     });
+
+    

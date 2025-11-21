@@ -20,35 +20,6 @@ formulario.addEventListener ('submit', function(e) {
     this.submit();
 });
 
-//punto 6
-
-let aside = document.querySelector('.menuCat');
-
-fetch("https://dummyjson.com/products/categories")
-.then(function(response){
-    return response.json();
-})
-.then(function(categorias){
-
-    for(let i = 0; i < categorias.length; i++){
-
-        if (categorias[i].slug === "smartphones" || categorias[i].slug === "mobile-accessories") {
-
-            aside.innerHTML += `
-                <li>
-                    <a href="./category.html?slug=${categorias[i].slug}">
-                        ${categorias[i].name}
-                    </a>
-                </li>
-            `;
-        }
-    }
-})
-.catch(function(e){
-    console.log(e);
-});
-
-
 let queryString = location.search;
 let qsObj = new URLSearchParams(queryString);
 let slug = qsObj.get("slug");
