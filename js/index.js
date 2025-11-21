@@ -18,8 +18,8 @@ formulario.addEventListener ('submit', function(e) {
         alert("El término debe tener al menos 3 caracteres")
         return;
     }
-    this.submit()
-})
+    this.submit();
+});
 
 // punto 3//
 let aside = document.querySelector('.menuCat');
@@ -33,7 +33,7 @@ fetch('https://dummyjson.com/products/categories')
     let menuLat = [];
 
     for (let i = 0; i < cat.length; i++) {
-      if (cat[i].slug === "smartphones" || cat[i].slug === "mobile-accesories") {
+      if (cat[i].slug === "smartphones" || cat[i].slug === "mobile-accessories") {
         menuLat.push(cat[i]);
       }
     }

@@ -181,7 +181,8 @@ footer {
 .bodyform main {
     margin-left: 0;
     display: flex;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
     min-height: 80vh;
 }
 
