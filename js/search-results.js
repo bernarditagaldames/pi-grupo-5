@@ -55,7 +55,7 @@ fetch(url)
                         <h3>${producto.title}</h3>
                         <p>${producto.description}</p>
                         <p><strong>$${producto.price}</strong></p>
-                        <a href="product-detail.html?id=${producto.id}">
+                        <a href="product.html?id=${producto.id}">
                             Ver detalle
                         </a>
                     </article>
