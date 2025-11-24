@@ -53,8 +53,46 @@ fetch(URL)
        for(let i = 0; i < data.tags.length && i < 3; i++) {
            tags.innerHTML += data.tags[i] + '';
        }
+       
+let contenedorReviews = document.querySelector('.review');
+contenedorReviews.innerHTML = "";
 
-    }) 
+
+if (data.reviews == null) {
+    contenedorReviews.innerHTML = "<p>No hay opiniones para este producto.</p>";
+    return;
+}
+
+if (data.reviews.length === 0) {
+    contenedorReviews.innerHTML = "<p>No hay opiniones para este producto.</p>";
+    return;
+}
+
+for (let i = 0; i < data.reviews.length; i++) {
+    let r = data.reviews[i];
+
+    let nombre;
+    if (r.reviewer != null && r.reviewer.name != null) {
+        nombre = r.reviewer.name;
+    } else if (r.reviewerName != null) {
+        nombre = r.reviewerName;
+    } else {
+        nombre = "Usuario desconocido";
+    }
+
+    contenedorReviews.innerHTML += `
+        <section>
+            <p><strong>Rating:</strong> ${r.rating} ⭐</p>
+            <p><strong>Comentario:</strong> ${r.comment}</p>
+            <p><strong>Fecha:</strong> ${r.date}</p>
+            <p><strong>Usuario:</strong> ${nombre}</p>
+            <hr>
+        </section>
+    `;
+}
+})
+
 .catch (function(e) {
     console.log(e)
 });
+
